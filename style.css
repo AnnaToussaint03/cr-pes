@@ -1,0 +1,104 @@
+body {
+    background-color: #ffe0b2; /* Couleur de fond */
+    color: #4e342e; /* Couleur de texte */
+    font-family: Arial, sans-serif; /* Police de caractères */
+}
+
+/* Style du banner */
+.banner {
+    background-color: #ffcc80; /* Couleur de fond du banner */
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Animation d'apparition */
+}
+
+/* Style des titres */
+h1, h2 {
+    color: #bf360c; /* Couleur du texte pour les titres */
+    text-shadow: 2px 2px #fff; /* Effet d'ombre sur le texte */
+    animation: slideInLeft 1s ease-in-out; /* Animation d'apparition */
+}
+
+/* Style des images */
+img {
+    border-radius: 10px; /* Coins arrondis pour l'image */
+    box-shadow: 5px 5px 10px #7b7b7b; /* Ombre portée sur l'image */
+    animation: pulse 2s infinite alternate; /* Animation de pulsation */
+}
+
+/* Style des liens */
+a {
+    color: #bf360c; /* Couleur du lien */
+    text-decoration: none; /* Supprimer soulignement du lien */
+    font-weight: bold; /* Texte en gras */
+    transition: color 0.3s; /* Transition de couleur lors du survol */
+}
+
+a:hover {
+    color: #ff8f00; /* Nouvelle couleur lors du survol */
+}
+
+/* Style du contenu */
+.content {
+    background-color: #ffcc80; /* Couleur de fond du contenu */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    animation: slideInRight 1s ease-in-out; /* Animation d'apparition */
+}
+
+/* Style des sous-titres */
+h3, h4 {
+    color: #bf360c; /* Couleur des sous-titres */
+}
+
+/* Style des listes */
+ul, ol {
+    color: #4e342e; /* Couleur de la liste */
+    padding-left: 20px;
+    animation: fadeIn 1s ease-in-out; /* Animation d'apparition */
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation de pulsation */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Animation de défilement de gauche à droite */
+@keyframes slideInRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation de défilement de droite à gauche */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
